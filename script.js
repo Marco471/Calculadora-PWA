@@ -1,5 +1,4 @@
 window.onload = function () {
-
   const display = document.getElementById("display");
 
   function add(valor) {

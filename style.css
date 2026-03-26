@@ -17,7 +17,7 @@ body {
 /* Contêiner da calculadora */
 .calc {
   width: 100%;
-  max-width: 400px; /* limite máximo em telas grandes */
+  max-width: 450px;
   padding: 20px;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.05);
@@ -29,21 +29,21 @@ body {
 #mensagem {
   text-align: center;
   color: #22c55e;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .subtitulo {
   text-align: center;
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
 /* Display */
 #display {
   width: 100%;
-  height: 60px;
-  font-size: 2rem;
+  height: 70px;
+  font-size: 2.4rem;
   text-align: right;
   border: none;
   border-radius: 12px;
@@ -62,10 +62,10 @@ body {
 
 /* Botões */
 button {
-  height: 55px;
+  height: 60px;
   border: none;
   border-radius: 12px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   background: rgba(255, 255, 255, 0.05);
   cursor: pointer;
@@ -88,7 +88,7 @@ button:hover {
 /* Contato discreto */
 .contato {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #94a3b8;
   margin-top: 12px;
 }
@@ -103,16 +103,16 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 360px) {
+/* Ajustes para telas pequenas */
+@media (max-width: 400px) {
   #display {
-    height: 50px;
-    font-size: 1.6rem;
+    height: 60px;
+    font-size: 2rem;
   }
 
   button {
-    height: 50px;
-    font-size: 1rem;
+    height: 55px;
+    font-size: 1.2rem;
   }
 
   .calc {
