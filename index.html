@@ -87,7 +87,7 @@
       background: #22c55e;
       color: #022c22;
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       box-shadow: 0 0 10px rgba(34,197,94,0.5);
     }
 
@@ -95,13 +95,13 @@
       background: #16a34a;
     }
 
-    /* DESTAQUE DO + */
+    /* + destacado */
     .plus {
       background: #16a34a;
       font-size: 1.6rem;
     }
 
-    /* BOTÃO C */
+    /* botão C */
     .clear {
       background: #ef4444;
       color: white;
@@ -123,11 +123,13 @@
 </head>
 <body>
 
+<!-- RELÓGIO -->
 <div class="clock-container">
   <div id="clock"></div>
   <div id="date"></div>
 </div>
 
+<!-- CALCULADORA -->
 <div class="calc">
   <input type="text" id="display" class="display" value="0" readonly>
 
@@ -149,13 +151,15 @@
 
     <button onclick="add('0')">0</button>
     <button onclick="add('.')">.</button>
+    <button class="operator" onclick="porcentagem()">%</button>
     <button class="operator" onclick="calcular()">=</button>
-    <button class="operator plus" onclick="add('+')">+</button>
 
+    <button class="operator plus" onclick="add('+')">+</button>
     <button class="clear" onclick="limpar()">C</button>
   </div>
 </div>
 
+<!-- WHATSAPP -->
 <div class="whatsapp">
   <a href="https://wa.me/5511991882423" target="_blank">
     Dev Marcos WhatsApp
@@ -165,6 +169,7 @@
 <script>
 function atualizarRelogio() {
   const now = new Date();
+
   document.getElementById('clock').innerText =
     now.toLocaleTimeString('pt-BR');
 
@@ -196,6 +201,14 @@ function calcular() {
 
 function limpar() {
   display.value = "0";
+}
+
+function porcentagem() {
+  try {
+    display.value = Number(display.value) / 100;
+  } catch {
+    display.value = "Erro";
+  }
 }
 </script>
 
