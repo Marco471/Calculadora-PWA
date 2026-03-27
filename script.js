@@ -37,3 +37,4 @@ function ajustarAltura() {
 window.addEventListener('load', ajustarAltura);
 window.addEventListener('resize', ajustarAltura);
 window.addEventListener('orientationchange', ajustarAltura);
+
