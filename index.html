@@ -2,25 +2,25 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Calculadora PWA</title>
+  <title>Calculadora Marcos</title>
 
-  <!-- Responsivo para celular -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Responsivo e sem zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- PWA -->
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0f172a">
 </head>
-
 <body>
 
 <div class="calc">
   <h2 id="mensagem">Dev Marcos 💻</h2>
   <p class="subtitulo">Calculadora JavaScript</p>
 
-  <input type="text" id="display" disabled>
+  <input type="text" id="display" value="0" readonly>
 
   <div class="grid">
     <button onclick="add('7')">7</button>
@@ -48,17 +48,15 @@
     <button onclick="porcentagem()">%</button>
   </div>
 
-  <!-- 💬 CONTATO DISCRETO -->
   <p class="contato">
     Dev Marcos • 
     <a href="https://wa.me/5511991882423?text=Olá%20vi%20sua%20calculadora" target="_blank">
       WhatsApp
     </a>
   </p>
-
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
