@@ -101,6 +101,13 @@
       font-size: 1.6rem;
     }
 
+    /* BOTÃO C */
+    .clear {
+      background: #ef4444;
+      color: white;
+      font-weight: bold;
+    }
+
     .whatsapp {
       margin-top: 15px;
     }
@@ -144,6 +151,8 @@
     <button onclick="add('.')">.</button>
     <button class="operator" onclick="calcular()">=</button>
     <button class="operator plus" onclick="add('+')">+</button>
+
+    <button class="clear" onclick="limpar()">C</button>
   </div>
 </div>
 
@@ -183,6 +192,10 @@ function calcular() {
   } catch {
     display.value = "Erro";
   }
+}
+
+function limpar() {
+  display.value = "0";
 }
 </script>
 
